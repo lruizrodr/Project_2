@@ -100,5 +100,5 @@ loadMoreBtn.addEventListener("click", function () {
 // -Do I need to do side effects → for...of / forEach
 
 //Plans for the future: 
-// -Random GIFs (using same search bar /w a different button) 
-// -Stricker Search(using same search bar /w a different button)
+// -Random GIFs (using same search bar /w a different button or search category change button on side bar) 
+// -Stricker Search(using same search bar /w a different button or search category change button on side bar)
