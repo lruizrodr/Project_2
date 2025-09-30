@@ -14,11 +14,19 @@ let offset = 0;    // next page start
 
 loadMoreBtn.style.display = "none"; // hidden until we have results
 
-//Functions K.I.S.S.
+//Functions K.I.S.S. FFS!!
 
+function addCard(item) {
+    const card = template.content.cloneNode(true).children[0];
+    card.querySelector(".card-title").textContent = item.title;
+    const img = card.querySelector(".card-image");
+    img.src = item.images.fixed_width.url;
+    img.alt = item.title;
+    img.loading = "lazy";
+    CSSContainerRule.appendChild(card);
+}
 
-
-
+console.log(addCard);
 
 
 
