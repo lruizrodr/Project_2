@@ -1,43 +1,43 @@
+/* SEARCH BAR */
 .search-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: .25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
 }
 
 input {
-    font-size: 1rem;
+  font-size: 1rem;
 }
 
+/*CARDS*/
 .user-cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: .25em;
-    margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 0.25em;
+  margin-top: 1rem;
 }
 
 .card {
-    border: 1px solid black;
-    border-radius: .25rem;
-    padding: .5rem;
+  border: 1px solid black;
+  border-radius: 0.25rem;
+  padding: 0.5rem;
 }
 
 .card > .header {
-    font-weight: bold;
-    margin-bottom: .25rem;
+  font-weight: bold;
+  margin-bottom: 0.25rem;
 }
+
 .card > .body {
- aspect-ratio: 1 / 1;
- overflow: hidden;
+  aspect-ratio: 1/1;
+  overflow: hidden;
 }
 
 .card > .body > img {
- width: 100%;
- height: 100%;
- border-radius: .25rem;
- object-fit: cover;
-}
-
-
-
-/*# sourceMappingURL=styles.css.map */
+  width: 100%;
+  height: 100%;
+  border-radius: 0.25rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}/*# sourceMappingURL=styles.css.map */

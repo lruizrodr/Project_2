@@ -7,67 +7,34 @@
     <link rel="stylesheet" href="CSS/styles.css">
 </head>
 <body>
-    <nav> 
-        <!-- This will be a NAVBAR -->
-    </nav>
+  <nav> 
+    <!-- This will be a NAVBAR -->
+  </nav>
     
-    <h1 class="mainTitle">Main Title</h1>
+  <h1 class="mainTitle">Main Title</h1>
 
-    <div class="search-wrapper">
-        <label for="search">Search...</label>
-        <input type="search" id="search">
-    <!-- <div> this will be the search bar -->
+  <div class="search-wrapper">
+    <label for="search">Search...</label>
+    <input type="search" id="search" data-search>
+    <button id="searchBtn" type="button">Search</button>
+  </div>
+
+  <template data-user-template>
+    <div class="card">
+      <div class="header" data-header>Image Title</div>
+      <div class="body" data-body>
+        <img alt="" />
+      </div>
     </div>
+  </template>
 
-    <div class="user-cards">
-        <div class="card">
-            <div class="header">Image Title</div>
-            <div class="body"><img src="https://picsum.photos/200/200" alt=""></div>
-        </div>
-        <div class="card">
-            <div class="header">Image Title</div>
-            <div class="body"><img src="https://picsum.photos/200/200" alt=""></div>
-        </div>
-        <div class="card">
-            <div class="header">Image Title</div>
-            <div class="body"></div>
-        </div>
-        <div class="card">
-            <div class="header">Image Title</div>
-            <div class="body"><img src="https://picsum.photos/200/200" alt=""></div>
-        </div>
-        <div class="card">
-            <div class="header">Image Title</div>
-            <div class="body"><img src="https://picsum.photos/200/200" alt=""></div>
-        </div>
-        <div class="card">
-            <div class="header">Image Title</div>
-            <div class="body"><img src="https://picsum.photos/200/200" alt=""></div>
-        </div>
-        <div class="card">
-            <div class="header">Image Title</div>
-            <div class="body"><img src="https://picsum.photos/200/200" alt=""></div>
-        </div>
-        <div class="card">
-            <div class="header">Image Title</div>
-            <div class="body"><img src="https://picsum.photos/200/200" alt=""></div>
-        </div>
-    </div>
-    
+  <div class="user-cards" data-user-cards-container></div>
+  <button id="loadMore" type="button">Load more</button>
 
+  <footer>
+    <!-- This will be a footer -->
+  </footer>
 
-
-
-    <template>
-        <div class="card">
-            <div class="header">Image Title</div>
-            <div class="body"><img src="https://picsum.photos/200/200" alt=""></div>
-        </div>
-    </template>
-    
-    <footer>
-        <!-- This will be a footer -->
-    </footer>
-    
+<script src="index.js"></script>    
 </body>
 </html>
