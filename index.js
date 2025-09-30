@@ -8,7 +8,13 @@ const searchBtn = document.getElementById("searchBtn");
 
 const API_KEY = "cugj8deZM3MxmsvUCaTVDxHMCxFQ10jB";
 const LIMIT = 12;
-const RATING = "g";
+const RATING = "pg-13";
+
+let currentQuery = "";
+let currentOffset = 0;
+let lastBatchCount = 0;
+
+loadMoreBtn.style.display = "none"; // hide initially
 
 async function searchGifs(query) {
   const userTerm = (query || "").trim();
@@ -53,8 +59,6 @@ searchInput.addEventListener("keydown", e => {
   if (e.key === "Enter") searchGifs(searchInput.value);
 });
 
-
-// Will need to add event listener to the search bar to capture input and make API call based on that input. DONT FORGET
 // search //
 // https://api.giphy.com/v1/gifs/search?api_key=YOUR_API_KEY&q=funny+cats&limit=10&offset=0&rating=g&lang=en
 // random //
