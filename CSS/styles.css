@@ -11,8 +11,8 @@ input {
 
 .user-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: .25em;
     margin-top: 1rem;
 }
 
@@ -20,8 +20,6 @@ input {
     border: 1px solid black;
     border-radius: .25rem;
     padding: .5rem;
-    text-align: left;
-    align-items: center;                 /* maybe? KEEP AN EYE */
 }
 
 .card > .header {
@@ -29,9 +27,16 @@ input {
     margin-bottom: .25rem;
 }
 .card > .body {
-    /* something for images,  maybe align center, work on later */
+ aspect-ratio: 1 / 1;
+ overflow: hidden;
 }
 
+.card > .body > img {
+ width: 100%;
+ height: 100%;
+ border-radius: .25rem;
+ object-fit: cover;
+}
 
 
 
