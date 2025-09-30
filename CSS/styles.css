@@ -1,3 +1,38 @@
-h1 {
-  background-color: lightblue;
-}/*# sourceMappingURL=styles.css.map */
+.search-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .25rem;
+}
+
+input {
+    font-size: 1rem;
+}
+
+.user-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.card {
+    border: 1px solid black;
+    border-radius: .25rem;
+    padding: .5rem;
+    text-align: left;
+    align-items: center;                 /* maybe? KEEP AN EYE */
+}
+
+.card > .header {
+    font-weight: bold;
+    margin-bottom: .25rem;
+}
+.card > .body {
+    /* something for images,  maybe align center, work on later */
+}
+
+
+
+
+/*# sourceMappingURL=styles.css.map */
