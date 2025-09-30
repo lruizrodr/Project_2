@@ -11,7 +11,7 @@ const loadMoreBtn        = document.getElementById("loadMoreBtn");
 
 //Config variables
 const API_KEY = "cugj8deZM3MxmsvUCaTVDxHMCxFQ10jB";
-const LIMIT   = 20;               // results per page
+const LIMIT   = 14;               // results per page
 const RATING  = "pg-13";              // content rating
 
 //States

@@ -13,9 +13,13 @@ input {
 /*CARDS*/
 .user-cards {
   display: grid;
+  border: solid 1px black;
+  border-radius: 0.25rem;
+  padding: 20px;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 0.25em;
+  gap: 0.5rem;
   margin-top: 1rem;
+  min-width: 270px;
 }
 
 .card {
