@@ -1,6 +1,24 @@
 // API key: cugj8deZM3MxmsvUCaTVDxHMCxFQ10jB
 // Base URL: https://api.giphy.com/v1/gifs/
 // Endpoint: https://api.giphy.com/v1/gifs/search?api_key=YOUR_API_KEY&q=funny+cats&limit=10&offset=0&rating=g&lang=en
+const userCardTemplate = document.querySelector("[data-user-template]");
+const userCardsContainer = document.querySelector("[data-user-cards-container]");
+const searchInput = document.querySelector("[data-search]");
+const searchBtn = document.getElementById("searchBtn");
+
+const API_KEY = "cugj8deZM3MxmsvUCaTVDxHMCxFQ10jB";
+const LIMIT = 12;
+const RATING = "g";
+
+
+
+
+
+
+
+
+
+
 
 
 
