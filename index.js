@@ -10,9 +10,9 @@ const API_KEY = "cugj8deZM3MxmsvUCaTVDxHMCxFQ10jB";
 const LIMIT = 12;
 const RATING = "pg-13";
 
-let currentQuery = "";
-let currentOffset = 0;
-let lastBatchCount = 0;
+let currentQuery = ""; //should remember last search
+let currentOffset = 0; // new offset for pagination
+let lastBatchCount = 0; // how many results were in the last batch
 
 loadMoreBtn.style.display = "none"; // hide initially
 
