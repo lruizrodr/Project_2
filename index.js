@@ -1,5 +1,6 @@
 // API key: cugj8deZM3MxmsvUCaTVDxHMCxFQ10jB
-// Base URL: https://api.giphy.com/v1/gifs/
+// Base GIF URL: https://api.giphy.com/v1/gifs/search
+// Base Sticker URL: https://api.giphy.com/v1/stickers/search maybe add later...
 
 //DOM elements
 const userCardsContainer = document.querySelector("[data-user-cards-container]");
