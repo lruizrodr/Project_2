@@ -1,39 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lizard Search Engine</title>
-    <link rel="stylesheet" href="CSS/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About</title>
+  <link rel="stylesheet" href="CSS/styles.css" />
 </head>
 <body>
-    <nav class="sidebar">
+  <nav class="sidebar">
     <ul>
-        <li><a href="index.html"></a>Home</li>
-        <li><a href="about.html"></a>About</li>
-        <li><a href="contact.html"></a>Contact</li>
-    </ul> 
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <footer class="sidebar-footer">
+      <p>© 2025 Lizardfy</p>
+    </footer>
   </nav>
 
-    <!-- About the search engine -->
-    <div>
-        <h1>About Lizard Search Engine</h1>
-        <p>Lizard Search Engine is a web application that allows users to search for GIFs using keywords. 
-            It provides a user-friendly interface to find and view GIFs in a responsive grid layout.</p>
-    <!-- USER STORY -->
-    <div>
-        <H1>User Story</H1>
-        <h4>Search Gif:</h4>
-        <p>As a user, I want to type a keyword into a search bar, so that I can find GIFs related to that keyword.</p>
-        <h4>View Search Results</h4>
-        <p>As a user, I want to see a grid of GIFs returned from the search, so that I can easily browse multiple options.</p>
-        <h4>Responsive Browsing</h4>
-        <p>As a mobile user, I want the GIFs and navigation to adjust to my screen size, so that I can comfortably use the site on my phone.</p>
-    </div>
-    <!-- Wireframes -->
-    <div>
-        <h1>Wireframes</h1>
-        <img src="CSS/Wireframe1.png" alt="Wireframes">
-    </div>
+  <main class="about-content">
+    <h1 class="mainTitle">About This Project</h1>
+
+    <section id="about">
+      <h2>About</h2>
+      <p>This page documents the project goal, scope, and the criteria used for evaluation.</p>
+    </section>
+
+    <section id="user-stories">
+      <h2>User Stories</h2>
+      <ul>
+        <li>As a user, I can search for GIFs by keyword.</li>
+        <li>As a user, I can load more results on demand.</li>
+        <li>As a user, I can view a responsive grid of results on mobile and desktop.</li>
+      </ul>
+    </section>
+
+    <section id="wireframes">
+      <h2>Wireframes</h2>
+      <p>High-level layout and navigation structure for Home, About, and Contact views.</p>
+    </section>
+
+    <section id="requirements">
+      <h2>Requirements</h2>
+      <ul>
+        <li>Accept a keyword and query the Giphy API.</li>
+        <li>Parse the response and render images.</li>
+        <li>Provide “Load more” pagination.</li>
+        <li>Host on GitHub Pages with a public repo and README.</li>
+      </ul>
+    </section>
+
+    <section id="tech">
+      <h2>Technologies</h2>
+      <ul>
+        <li>HTML, SCSS/CSS</li>
+        <li>Vanilla JavaScript (fetch, async/await)</li>
+        <li>Giphy API</li>
+        <li>GitHub Pages</li>
+      </ul>
+    </section>
+
+    <section id="grading">
+      <h2>Grading Criteria</h2>
+      <ul>
+        <li>Functionality and robustness</li>
+        <li>Creativity, styling, UX</li>
+        <li>Code quality and structure</li>
+        <li>Documentation and commit history</li>
+      </ul>
+    </section>
+
+    <section id="setup">
+      <h2>Setup</h2>
+      <ol>
+        <li>Clone repo and open <code>index.html</code>.</li>
+        <li>Add your Giphy API key to the script file.</li>
+        <li>Run locally with a simple HTTP server or open directly.</li>
+      </ol>
+    </section>
+
+    <section id="usage">
+      <h2>Usage</h2>
+      <ol>
+        <li>Enter a term in the search box.</li>
+        <li>Press Lizardfy to fetch GIFs.</li>
+        <li>Click Load More to paginate results.</li>
+      </ol>
+    </section>
+
+    <section id="improvements">
+      <h2>Ideas for Improvement</h2>
+      <ul>
+        <li>Favorites with local storage</li>
+        <li>Filters (rating, type)</li>
+        <li>Light/Dark/Neon themes</li>
+      </ul>
+    </section>
+
+    <section id="readme">
+      <h2>README</h2>
+      <p>Full README content mirrors the sections above and includes project description, usage, tech stack, and future work.</p>
+    </section>
+  </main>
+
+  <nav class="about-sidebar">
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#user-stories">User Stories</a></li>
+      <li><a href="#wireframes">Wireframes</a></li>
+      <li><a href="#requirements">Requirements</a></li>
+      <li><a href="#tech">Technologies</a></li>
+      <li><a href="#grading">Grading</a></li>
+      <li><a href="#setup">Setup</a></li>
+      <li><a href="#usage">Usage</a></li>
+      <li><a href="#improvements">Improvements</a></li>
+      <li><a href="#readme">README</a></li>
+    </ul>
+  </nav>
 </body>
 </html>

@@ -1,20 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=\, initial-scale=1.0">
-    <title>Contact</title>
-    <link rel="stylesheet" href="CSS/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact • Lizard Dominion</title>
+  <link rel="stylesheet" href="CSS/styles.css" />
 </head>
 <body>
-    <nav class="sidebar">
+  <nav class="sidebar">
     <ul>
-        <li><a href="index.html"></a>Home</li>
-        <li><a href="about.html"></a>About</li>
-        <li><a href="contact.html"></a>contact</li>
-    </ul> 
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <footer class="sidebar-footer">
+      <p>© 2025 Lizard Dominion</p>
+    </footer>
   </nav>
-  <h1 class="mainTitle">Lizard Dominion</h1>
-    
+
+  <main class="mcontent">
+    <h1 class="mainTitle">Contact</h1>
+
+    <div class="search-console">
+      <form id="contact-form" action="#" method="post" style="display:contents">
+        <label class="search-label" for="name">Name</label>
+        <input id="name" name="name" type="text" placeholder="Name" required />
+
+        <label class="search-label" for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="you@example.com" required />
+
+        <label class="search-label" for="message">Message</label>
+        <input id="message" name="message" type="text" placeholder="How can we help?" required />
+
+        <button id="searchBtn" type="submit">Send</button>
+      </form>
+    </div>
+
+    <div class="user-cards" style="max-width:900px">
+      <div class="card">
+        <div class="header">Other Ways To Reach Us</div>
+        <div class="body">
+          <div>
+            <p>Email: support@lizarddominion.example</p>
+            <p>GitHub: github.com/yourusername</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button id="loadMoreBtn" type="button">Back to Home</button>
+  </main>
 </body>
 </html>

@@ -9,40 +9,37 @@
 <body>
   <nav class="sidebar">
     <ul>
-        <li><a href="index.html"></a>Home</li>
-        <li><a href="about.html"></a>About</li>
-        <li><a href="contact.html"></a>contact</li>
-    </ul> 
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <footer class="sidebar-footer">
+      <p>© 2025 Lizardfy</p>
+    </footer>
   </nav>
-   
+
   <main class="mcontent">
-  <h1 class="mainTitle">Lizard Dominion</h1>
+    <h1 class="mainTitle">Lizardfy</h1>
 
-  <div class="search-console">
-  <div class="search-wrapper">
-    <label class="search-label" for="search">Search</label>
-    <input type="search" id="search" data-search placeholder="Lizard...">
-    <button id="searchBtn" type="button">Lizardfy</button>
-  </div>
-  </div>
-
-  <div class="user-cards" data-user-cards-container>
-  <template data-user-template>
-    <div class="card">
-      <div class="header" data-header>Image Title</div>
-      <div class="body" data-body>
-        <img alt="" />
-      </div>
+    <div class="search-console">
+      <label class="search-label" for="search">Search...</label>
+      <input type="search" id="search" data-search placeholder="Lizard...">
+      <button id="searchBtn" type="button">Lizardfy</button>
     </div>
-  </template>
-  </div>
-  
-  <button id="loadMoreBtn" type="button">Load more</button>
-  </main>
-  <footer>
-    <!-- This will be a footer -->
-  </footer>
 
+    <template data-user-template>
+      <div class="card">
+        <div class="header" data-header>Image Title</div>
+        <div class="body" data-body>
+          <img alt="" />
+        </div>
+      </div>
+    </template>
+
+    <div class="user-cards" data-user-cards-container></div>
+
+    <button id="loadMoreBtn" type="button">Load more</button>
+  </main>
 <script src="index.js"></script>    
 </body>
 </html>
