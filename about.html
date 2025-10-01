@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="CSS/styles.css" />
 </head>
 <body>
+    <button class="menu-toggle" aria-label="Toggle menu">☰</button>
   <nav class="sidebar">
     <ul>
       <li><a href="index.html">Home</a></li>
@@ -117,5 +118,13 @@
       <li><a href="#readme">README</a></li>
     </ul>
   </nav>
+<script>
+  const toggle = document.querySelector('.menu-toggle');
+  const sidebar = document.querySelector('.sidebar');
+  
+  toggle.addEventListener('click', () => {
+    sidebar.classList.toggle('open');
+  });
+</script>  
 </body>
 </html>

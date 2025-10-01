@@ -3,10 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Contact • Lizard Dominion</title>
+  <title>Contact</title>
   <link rel="stylesheet" href="CSS/styles.css" />
 </head>
 <body>
+    <button class="menu-toggle" aria-label="Toggle menu">☰</button>
   <nav class="sidebar">
     <ul>
       <li><a href="index.html">Home</a></li>
@@ -14,41 +15,57 @@
       <li><a href="contact.html">Contact</a></li>
     </ul>
     <footer class="sidebar-footer">
-      <p>© 2025 Lizard Dominion</p>
+      <p>© 2025 Lizardfy</p>
     </footer>
   </nav>
 
   <main class="mcontent">
     <h1 class="mainTitle">Contact</h1>
 
-    <div class="search-console">
-      <form id="contact-form" action="#" method="post" style="display:contents">
-        <label class="search-label" for="name">Name</label>
-        <input id="name" name="name" type="text" placeholder="Name" required />
+    <div class="search-console contact-console">
+      <form id="contact-form" class="contact-form" action="#" method="post">
+        <div class="field">
+          <label class="search-label" for="name">Name</label>
+          <input id="name" name="name" type="text" placeholder="Name" required />
+        </div>
 
-        <label class="search-label" for="email">Email</label>
-        <input id="email" name="email" type="email" placeholder="you@example.com" required />
+        <div class="field">
+          <label class="search-label" for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="you@example.com" required />
+        </div>
 
-        <label class="search-label" for="message">Message</label>
-        <input id="message" name="message" type="text" placeholder="How can we help?" required />
+        <div class="field field-wide">
+          <label class="search-label" for="message">Message</label>
+          <input id="message" name="message" type="text" placeholder="How can we help?" required />
+        </div>
 
-        <button id="searchBtn" type="submit">Send</button>
+        <div class="form-actions">
+          <button id="sendBtn" class="arcade-btn" type="submit">Send</button>
+        </div>
       </form>
     </div>
 
-    <div class="user-cards" style="max-width:900px">
+    <div class="contact-cards">
       <div class="card">
         <div class="header">Other Ways To Reach Us</div>
         <div class="body">
           <div>
-            <p>Email: support@lizarddominion.example</p>
-            <p>GitHub: github.com/yourusername</p>
+            <p>Email: support@lizardfy.example</p>
+            <p>GitHub: github.com/lruizrodr</p>
           </div>
         </div>
       </div>
     </div>
 
-    <button id="loadMoreBtn" type="button">Back to Home</button>
+    <button id="loadMoreBtn" type="button" onclick="location.href='index.html'">Back to Home</button>
   </main>
+ <script>
+  const toggle = document.querySelector('.menu-toggle');
+  const sidebar = document.querySelector('.sidebar');
+  
+  toggle.addEventListener('click', () => {
+    sidebar.classList.toggle('open');
+  });
+</script> 
 </body>
 </html>
