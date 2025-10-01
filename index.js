@@ -98,6 +98,8 @@ loadMoreBtn.addEventListener("click", function () {
 // -Do I need to filter → filter
 // -Do I need to accumulate → reduce
 // -Do I need to do side effects → for...of / forEach
+// Follow Pareto: 80% 20% rule
+// -Get 80% done in 20% of the time, then iterate
 
 //Plans for the future: 
 // -Random GIFs (using same search bar /w a different button or search category change button on side bar) 
