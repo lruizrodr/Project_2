@@ -1,7 +1,7 @@
-# Lizard Powered Engine 🦎
+# Lizardfy 🦎
 
 ## Overview  
-**Lizard Powered Engine** is a custom-built search engine that uses the Giphy API to fetch and display lizard-themed
+**Lizardfy** is a custom-built search engine that uses the Giphy API to fetch and display lizard-themed
  GIFs (and beyond). The project was created as part of a **Software Engineering Bootcamp** to practice building a fully
   functional frontend web app with **HTML, SCSS, and JavaScript**, while also learning how to integrate external APIs.  
 
@@ -16,17 +16,18 @@ The website is styled with **SCSS** for maintainability and responsiveness, with
 ---
 
 ## Structure
-├── CSS/
-│   ├── styles.css        # Compiled stylesheet
-│   ├── styles.css.map    # Source map for debugging SCSS
-│   ├── styles.scss       # Main SCSS source file
-│   └── Wireframe1.png    # Wireframe image for documentation
-│
-├── about.html            # About page (user stories, wireframe showcase)
-├── contact.html          # Contact page
-├── index.html            # Homepage (search engine)
-├── index.js              # JavaScript logic (API calls, DOM updates)
-└── readme.md             # Project documentation
+
+```text
+CSS/
+├── styles.css            # Compiled stylesheet
+├── styles.css.map        # Source map for debugging SCSS
+├── styles.scss           # Main SCSS source file
+└── Wireframe1.png        # Wireframe image for documentation
+about.html                # About page (user stories, wireframe showcase)
+contact.html              # Contact page
+index.html                # Homepage (search engine)
+index.js                  # JavaScript logic (API calls, DOM updates)
+readme.md                 # Project documentation
 
 ---
 
