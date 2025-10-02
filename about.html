@@ -138,6 +138,14 @@ sass --watch SCSS:CSS</code></pre>
       <p>This project does not currently have a license. All rights reserved.</p>
     </section>
   </main>
+   <script>
+  const toggle = document.querySelector('.menu-toggle');
+  const sidebar = document.querySelector('.sidebar');
+  
+  toggle.addEventListener('click', () => {
+    sidebar.classList.toggle('open');
+  });
+</script> 
 <script src="index.js"></script>
 </body>
 </html>
