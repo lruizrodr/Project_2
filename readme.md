@@ -15,6 +15,21 @@ The website is styled with **SCSS** for maintainability and responsiveness, with
 
 ---
 
+## Structure
+├── CSS/
+│   ├── styles.css        # Compiled stylesheet
+│   ├── styles.css.map    # Source map for debugging SCSS
+│   ├── styles.scss       # Main SCSS source file
+│   └── Wireframe1.png    # Wireframe image for documentation
+│
+├── about.html            # About page (user stories, wireframe showcase)
+├── contact.html          # Contact page
+├── index.html            # Homepage (search engine)
+├── index.js              # JavaScript logic (API calls, DOM updates)
+└── readme.md             # Project documentation
+
+---
+
 ## Live Demo  
 👉 [GitHub Pages Link](????????????????????????????????????????)  
 
