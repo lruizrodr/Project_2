@@ -8,8 +8,6 @@ const template           = document.querySelector("[data-user-template]");
 const searchInput        = document.querySelector("[data-search]");
 const searchBtn          = document.getElementById("searchBtn");
 const loadMoreBtn        = document.getElementById("loadMoreBtn");
-const toggle             = document.querySelector('.menu-toggle');
-const sidebar            = document.querySelector('.sidebar');
 
 //Config variables
 const API_KEY = "cugj8deZM3MxmsvUCaTVDxHMCxFQ10jB";
@@ -29,34 +27,9 @@ function addCard(item) {
   const img = card.querySelector("[data-body] img");
   img.src = item.images.fixed_width.url;
   img.alt = item.title || "gif";
-  img.fixed_width = "async"; // for better performance
-  img.referrerPolicy = "no-referrer"; // avoid CORS issues
   img.loading = "lazy";
   userCardsContainer.appendChild(card);
 }
-const fw = item.images.fixed_width;
-if (fw && fw.width && fw.height) {
-  img.width  = parseInt(fw.width, 10);
-  img.height = parseInt(fw.height, 10);
-}
-const fwSmall = item.images.fixed_width_small;
-if (fwSmall?.url) {
-  img.srcset = `${fwSmall.url} 200w, ${fw.url} 480w`;
-  img.sizes  = "(max-width: 480px) 44vw, (max-width: 768px) 30vw, 260px";
-}
-
-function setMenu(open) {
-  sidebar.classList.toggle('open', open);
-  toggle.setAttribute('aria-expanded', String(open));
-}
-
-document.querySelectorAll('.nav-link').forEach(a => 
-  a.addEventListener('click', () => setMenu(false))
-);
-
-document.addEventListener('keydown', (e) => {
-  if (e.key === 'Escape') setMenu(false);
-});
 
 // Async function to fetch and render gifs //sidenote: try/catch block for better error handling
 async function fetchAndRender(append) {
@@ -108,8 +81,6 @@ searchInput.addEventListener("keydown", function (e) {
 loadMoreBtn.addEventListener("click", function () {
   fetchAndRender(true);
 });
-
-toggle.addEventListener('click', () => setMenu(!sidebar.classList.contains('open')));
 
 //FUTURE IMPROVEMENTS//
 //WARNING: Before creating another freaking mess, plan your code architecture!!
