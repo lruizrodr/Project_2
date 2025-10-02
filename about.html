@@ -7,124 +7,137 @@
   <link rel="stylesheet" href="CSS/styles.css" />
 </head>
 <body>
-    <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+  <button class="menu-toggle" aria-label="Toggle menu">☰</button>
   <nav class="sidebar">
     <ul>
       <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
+      <li><a class="active" href="about.html">About</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
-    <footer class="sidebar-footer">
-      <p>© 2025 Lizardfy</p>
-    </footer>
   </nav>
 
-  <main class="about-content">
-    <h1 class="mainTitle">About This Project</h1>
-
-    <section id="about">
-      <h2>About</h2>
-      <p>This page documents the project goal, scope, and the criteria used for evaluation.</p>
+  <main>
+    <h1>Lizardfy 🦎</h1>
+    <section>
+      <h2>Overview</h2>
+      <p>
+        <strong>Lizardfy</strong> is a custom-built search engine that uses the Giphy API
+        to fetch and display lizard-themed GIFs (and beyond). The project was created as part of a
+        <strong>Software Engineering Bootcamp</strong> to practice building a fully functional frontend web
+        app with <strong>HTML, SCSS, and JavaScript</strong>, while integrating an external API.
+      </p>
+      <ul>
+        <li>Enter a search term</li>
+        <li>Fetch GIFs dynamically from the Giphy API</li>
+        <li>View results in a responsive card-based layout</li>
+        <li>Navigate between <strong>Home, About, and Contact</strong> pages</li>
+      </ul>
     </section>
-
-    <section id="user-stories">
+    <section>
+      <h2>Live Demo</h2>
+      <p>
+        GitHub Pages: 
+        <a href="https://lruizrodr.github.io/Project_2/" target="_blank" rel="noopener noreferrer">
+          https://lruizrodr.github.io/Project_2/
+        </a>
+      </p>
+    </section>
+    <section>
       <h2>User Stories</h2>
       <ul>
-        <li>As a user, I can search for GIFs by keyword.</li>
-        <li>As a user, I can load more results on demand.</li>
-        <li>As a user, I can view a responsive grid of results on mobile and desktop.</li>
+        <li>As a user, I want to <strong>search GIFs by keyword</strong>, so I can explore lizard-related content.</li>
+        <li>As a user, I want the site to be <strong>responsive</strong>, so I can use it on both mobile and desktop.</li>
+        <li>As a user, I want an <strong>intuitive layout with navigation</strong>, so I can easily move between Home, About, and Contact pages.</li>
+        <li>As a developer, I want my <strong>SCSS organized and maintainable</strong>, so I can scale the project easily.</li>
       </ul>
     </section>
-
-    <section id="wireframes">
-      <h2>Wireframes</h2>
-      <p>High-level layout and navigation structure for Home, About, and Contact views.</p>
-    </section>
-
-    <section id="requirements">
-      <h2>Requirements</h2>
+    <section aria-labelledby="wireframe-heading">
+  <h2 id="wireframe-heading">Wireframe</h2>
+  <p>Below is the initial wireframe designed for the project:</p>
+  <div class="card wireframe-card">
+    <img src="CSS/Wireframe1.png" alt="Wireframe Option 1" class="wireframe-img" />
+  </div>
+</section>
+    <section>
+      <h2>Features</h2>
       <ul>
-        <li>Accept a keyword and query the Giphy API.</li>
-        <li>Parse the response and render images.</li>
-        <li>Provide “Load more” pagination.</li>
-        <li>Host on GitHub Pages with a public repo and README.</li>
+        <li>🔍 <strong>Search Functionality</strong> – fetch GIFs from Giphy by keyword</li>
+        <li>📱 <strong>Responsive Layout</strong> – optimized for both desktop and mobile</li>
+        <li>🎨 <strong>SCSS Styling</strong> – clean, modular, and organized styles</li>
+        <li>🗂️ <strong>Multi-page Navigation</strong> – Home, About, and Contact pages</li>
+        <li>⚡ <strong>Dynamic Rendering</strong> – results update instantly without reloading</li>
       </ul>
     </section>
-
-    <section id="tech">
-      <h2>Technologies</h2>
+    <section>
+      <h2>Technologies Used</h2>
       <ul>
-        <li>HTML, SCSS/CSS</li>
-        <li>Vanilla JavaScript (fetch, async/await)</li>
-        <li>Giphy API</li>
-        <li>GitHub Pages</li>
+        <li><strong>HTML5</strong> – semantic markup</li>
+        <li><strong>SCSS (compiled to CSS)</strong> – structured styling, responsive design</li>
+        <li><strong>JavaScript (ES6)</strong> – async/await, DOM manipulation, API integration</li>
+        <li><strong>Giphy API</strong> – powering the search engine results</li>
       </ul>
     </section>
-
-    <section id="grading">
-      <h2>Grading Criteria</h2>
-      <ul>
-        <li>Functionality and robustness</li>
-        <li>Creativity, styling, UX</li>
-        <li>Code quality and structure</li>
-        <li>Documentation and commit history</li>
-      </ul>
-    </section>
-
-    <section id="setup">
-      <h2>Setup</h2>
+    <section>
+      <h2>How to Use</h2>
       <ol>
-        <li>Clone repo and open <code>index.html</code>.</li>
-        <li>Add your Giphy API key to the script file.</li>
-        <li>Run locally with a simple HTTP server or open directly.</li>
+        <li>Open the site in your browser.</li>
+        <li>Type a keyword in the <strong>search bar</strong> (e.g., “lizard”, “funny”, “dragon”).</li>
+        <li>Click <strong>Search</strong> to see GIFs appear instantly.</li>
+        <li>Use the <strong>Load More</strong> button (if included) to fetch additional results.</li>
+        <li>Navigate to <strong>About</strong> to read project details or <strong>Contact</strong> for info.</li>
       </ol>
     </section>
-
-    <section id="usage">
-      <h2>Usage</h2>
+    <section>
+      <h2>Installation &amp; Setup (For Developers)</h2>
       <ol>
-        <li>Enter a term in the search box.</li>
-        <li>Press Lizardfy to fetch GIFs.</li>
-        <li>Click Load More to paginate results.</li>
+        <li>Clone the repository:</li>
+      </ol>
+      <pre><code>git clone https://github.com/yourusername/your-repo-name.git</code></pre>
+      <ol start="2">
+        <li>Navigate into the project folder:</li>
+      </ol>
+      <pre><code>cd your-repo-name</code></pre>
+      <ol start="3">
+        <li>Open <code>index.html</code> in your browser.</li>
+      </ol>
+      <p>(Optional) If you want to modify styles, install Sass and watch SCSS:</p>
+      <pre><code>npm install -g sass
+sass --watch SCSS:CSS</code></pre>
+    </section>
+    <section>
+      <h2>Project Structure</h2>
+      <pre><code>├── CSS/
+│   ├── styles.css        # Compiled stylesheet
+│   ├── styles.css.map    # Source map for debugging SCSS
+│   ├── styles.scss       # Main SCSS source file
+│   └── Wireframe1.png    # Wireframe image for documentation
+│
+├── about.html            # About page (user stories, wireframe showcase)
+├── contact.html          # Contact page
+├── index.html            # Homepage (search engine)
+├── index.js              # JavaScript logic (API calls, DOM updates)
+└── readme.md             # Project documentation</code></pre>
+    </section>
+    <section>
+      <h2>Future Improvements</h2>
+      <ol>
+        <li>⭐ <strong>Favorite GIFs</strong> – allow users to save and revisit their favorite GIFs.</li>
+        <li>📂 <strong>Categories/Filters</strong> – add buttons for quick searches (e.g., trending, funny, cute).</li>
+        <li>🌙 <strong>Light Mode Toggle</strong> – user-controlled theme switching.</li>
+        <li>🔄 <strong>Infinite Scroll</strong> – auto-load more GIFs as the user scrolls.</li>
+        <li>🔒 <strong>User Accounts</strong> – optional login to save searches across devices.</li>
       </ol>
     </section>
-
-    <section id="improvements">
-      <h2>Ideas for Improvement</h2>
-      <ul>
-        <li>Favorites with local storage</li>
-        <li>Filters (rating, type)</li>
-        <li>Light/Dark/Neon themes</li>
-      </ul>
+    <section>
+      <h2>Author</h2>
+      <p>👤 <strong>Luis Ruiz</strong><br/>SE Bootcamp – Project 2</p>
     </section>
 
-    <section id="readme">
-      <h2>README</h2>
-      <p>Full README content mirrors the sections above and includes project description, usage, tech stack, and future work.</p>
+    <section>
+      <h2>License</h2>
+      <p>This project does not currently have a license. All rights reserved.</p>
     </section>
   </main>
-
-  <nav class="about-sidebar">
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#user-stories">User Stories</a></li>
-      <li><a href="#wireframes">Wireframes</a></li>
-      <li><a href="#requirements">Requirements</a></li>
-      <li><a href="#tech">Technologies</a></li>
-      <li><a href="#grading">Grading</a></li>
-      <li><a href="#setup">Setup</a></li>
-      <li><a href="#usage">Usage</a></li>
-      <li><a href="#improvements">Improvements</a></li>
-      <li><a href="#readme">README</a></li>
-    </ul>
-  </nav>
-<script>
-  const toggle = document.querySelector('.menu-toggle');
-  const sidebar = document.querySelector('.sidebar');
-  
-  toggle.addEventListener('click', () => {
-    sidebar.classList.toggle('open');
-  });
-</script>  
+<script src="index.js"></script>
 </body>
 </html>
