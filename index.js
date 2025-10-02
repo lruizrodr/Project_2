@@ -1,7 +1,3 @@
-// API key: cugj8deZM3MxmsvUCaTVDxHMCxFQ10jB
-// Base GIF URL: https://api.giphy.com/v1/gifs/search
-// Base Sticker URL: https://api.giphy.com/v1/stickers/search maybe add later...
-
 //DOM elements
 const userCardsContainer = document.querySelector("[data-user-cards-container]");
 const template           = document.querySelector("[data-user-template]");
@@ -81,26 +77,3 @@ searchInput.addEventListener("keydown", function (e) {
 loadMoreBtn.addEventListener("click", function () {
   fetchAndRender(true);
 });
-
-//FUTURE IMPROVEMENTS//
-//WARNING: Before creating another freaking mess, plan your code architecture!!
-// Before writing a function
-// -What does it take (params)?
-// -What does it return (data or nothing)?
-// -What side effects (DOM, global state) does it have?
-// -What can go wrong, and who handles that?
-// For async flows
-// -Where do I await? (fetch, parsing)
-// -Where do I throw vs. handle?
-// -Do I need loading and empty states?
-// For arrays
-// -Do I need to transform → map
-// -Do I need to filter → filter
-// -Do I need to accumulate → reduce
-// -Do I need to do side effects → for...of / forEach
-// Follow Pareto: 80% 20% rule
-// -Get 80% done in 20% of the time, then iterate
-
-//Plans for the future: 
-// -Random GIFs (using same search bar /w a different button or search category change button on side bar) 
-// -Stricker Search(using same search bar /w a different button or search category change button on side bar)
